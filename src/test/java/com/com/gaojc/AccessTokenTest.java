@@ -1,5 +1,6 @@
 package com.gaojc;
 
+import com.SpringTest;
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.gaojc.config.AccessToken;
@@ -9,24 +10,31 @@ import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 
 /**
  * Created by gaojc on 2018/4/19.
  */
 
-public class AccessTokenTest {
+public class AccessTokenTest extends SpringTest {
     private static final Logger logger = LoggerFactory.getLogger(MyServer.class);
 
     private static String access_token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=" +
             "client_credential&appid=APPID&secret=APPSECRET";
 
-    private String appid = "";
+    @Value("accessTokenUrl")
+    private String accessTokenUrl;
+
+    @Value("appId")
+    private String appid;
+
+    @Value("appSecret")
     private String appsecret = "";
 
     @Before
     public void init() {
-        appid = "wx462586dab64245ec";
-        appsecret = "2fcd0b46529bfc2dfecfdeccd9099745";
+//        appid = "wx462586dab64245ec";
+//        appsecret = "2fcd0b46529bfc2dfecfdeccd9099745";
     }
 
     /**

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
     <display-name>gaming</display-name>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:appContext.xml</param-value>
+    </context-param>
+    <!-- 配置监听器 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
     <servlet>
         <servlet-name>myServer</servlet-name>
         <servlet-class>com.gaojc.servlet.MyServer</servlet-class>
