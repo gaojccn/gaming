@@ -1,7 +1,7 @@
 
-package com.gaojc.servlet;
+package com.gaojc.gaming.servlet;
 
-import com.gaojc.service.MyCheck;
+import com.gaojc.gaming.service.MyCheck;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

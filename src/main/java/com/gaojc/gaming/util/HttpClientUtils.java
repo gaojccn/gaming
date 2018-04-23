@@ -1,4 +1,4 @@
-package com.gaojc.util;
+package com.gaojc.gaming.util;
 
 import com.alibaba.fastjson.JSONObject;
 import org.apache.http.HttpEntity;

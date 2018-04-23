@@ -1,4 +1,4 @@
-package com.gaojc.config;
+package com.gaojc.gaming.config;
 
 /**
  * Created by gaojc on 2018/4/19.

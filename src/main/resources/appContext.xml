@@ -25,28 +25,28 @@
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <context:component-scan base-package="com.gaojc.servlet"></context:component-scan>
-    <bean id="SpringContextHelper" class="com.zdmoney.message.utils.SpringContextHelper"/>
+    <context:component-scan base-package="com.gaojc.gaming.servlet"></context:component-scan>
+    <!--<bean id="SpringContextHelper" class="com.gaojc.gaming.utils.SpringContextHelper"/>-->
 
     <bean id="mpAccount" class="io.github.elkan1788.mpsdk4j.vo.MPAccount">
-        <property name="mpId" value="${wechat.mpId}"/>
+        <!--<property name="mpId" value="${wechat.mpId}"/>-->
         <property name="appId" value="${wechat.appId}"/>
         <property name="appSecret" value="${wechat.appSecret}"/>
-        <property name="token" value="${wechat.token}"/>
-        <property name="AESKey" value="${wechat.aesKey}"/>
+        <!--<property name="token" value="${wechat.token}"/>-->
+        <!--<property name="AESKey" value="${wechat.aesKey}"/>-->
     </bean>
 
     <bean id="wechatAPI" class="io.github.elkan1788.mpsdk4j.api.WechatAPIImpl" factory-method="create">
         <constructor-arg ref="mpAccount"/>
     </bean>
-
-    <!--mybatis-->
+<!--
+    &lt;!&ndash;mybatis&ndash;&gt;
     <import resource="spring/appContext_mybatis.xml"/>
-    <!--定时任务-->
+    &lt;!&ndash;定时任务&ndash;&gt;
     <import resource="spring/appContext_task.xml"/>
-    <!--消息队列-->
+    &lt;!&ndash;消息队列&ndash;&gt;
     <import resource="spring/appContext_mq.xml"/>
-    <!--redis-->
-    <import resource="spring/appContext_redis.xml"/>
+    &lt;!&ndash;redis&ndash;&gt;
+    <import resource="spring/appContext_redis.xml"/>-->
 
 </beans>

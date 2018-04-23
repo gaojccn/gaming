@@ -1,4 +1,4 @@
-package com.gaojc.service;
+package com.gaojc.gaming.service;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

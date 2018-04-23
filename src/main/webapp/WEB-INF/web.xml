@@ -11,7 +11,7 @@
     </listener>
     <servlet>
         <servlet-name>myServer</servlet-name>
-        <servlet-class>com.gaojc.servlet.MyServer</servlet-class>
+        <servlet-class>com.gaojc.gaming.servlet.MyServer</servlet-class>
     </servlet>
 
     <!-- url-pattern中配置的/myServer用于指定该Servlet的访问路径 -->
