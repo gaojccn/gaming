@@ -15,7 +15,7 @@ public class MyCheck {
     public static final String token = "gaojc2018";
 
     public static boolean checkSignature(String signature, String timestamp, String nonce) {
-        String[] arr = {"gaojc2018", timestamp, nonce};
+        String[] arr = {token, timestamp, nonce};
         Arrays.sort(arr);
 
         StringBuilder content = new StringBuilder();

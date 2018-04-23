@@ -21,7 +21,7 @@
     <aop:aspectj-autoproxy/>
 
     <!--扫描package-->
-    <context:component-scan base-package="com.gaojc">
+    <context:component-scan base-package="com.gaojc.gaming">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
@@ -29,10 +29,10 @@
     <!--<bean id="SpringContextHelper" class="com.gaojc.gaming.utils.SpringContextHelper"/>-->
 
     <bean id="mpAccount" class="io.github.elkan1788.mpsdk4j.vo.MPAccount">
-        <!--<property name="mpId" value="${wechat.mpId}"/>-->
+        <property name="mpId" value="${wechat.mpId}"/>
         <property name="appId" value="${wechat.appId}"/>
         <property name="appSecret" value="${wechat.appSecret}"/>
-        <!--<property name="token" value="${wechat.token}"/>-->
+        <property name="token" value="${wechat.token}"/>
         <!--<property name="AESKey" value="${wechat.aesKey}"/>-->
     </bean>
 

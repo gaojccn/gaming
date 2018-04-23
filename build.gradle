@@ -46,7 +46,10 @@ project.ext {
             "spring-core",
             "spring-beans",
             "spring-context",
-            "spring-aop"
+            "spring-aop",
+            "spring-webmvc",
+            "spring-tx",
+            "spring-context-support"
     ]
     restAssuredVersion = '3.0.2'
 }
