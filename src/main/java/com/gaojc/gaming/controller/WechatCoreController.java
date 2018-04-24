@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author gaojc
  */
-@RequestMapping("/springmvc")
+@RequestMapping("/rest")
 @Controller
 public class WechatCoreController extends WechatWebSupport {
 
@@ -39,7 +39,7 @@ public class WechatCoreController extends WechatWebSupport {
         _wk.setWechatHandler(new WechatDefHandler());
     }
 
-    @RequestMapping("/wechatcore")
+    @RequestMapping("/api")
     public void wechatCore(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         this.interact(req, resp);
     }
