@@ -13,10 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * SpringMVC环境接入
- * 
- * @author 凡梦星尘(elkan1788@gmail.com)
- * @since 2.0
+ * SpringMVC测试
+ *
+ * @author gaojc
  */
 @RequestMapping("/springmvc")
 @Controller
