@@ -1,6 +1,6 @@
 package com.gaojc.gaming.controller;
 
-import io.github.elkan1788.mpsdk4j.core.WechatDefHandler;
+import com.gaojc.gaming.handler.MyWechatHandler;
 import io.github.elkan1788.mpsdk4j.mvc.WechatWebSupport;
 import io.github.elkan1788.mpsdk4j.util.ConfigReader;
 import io.github.elkan1788.mpsdk4j.vo.MPAccount;
@@ -36,7 +36,7 @@ public class WechatCoreController extends WechatWebSupport {
         mpact.setToken(_cr.get("wechat.token"));
 //        mpact.setAESKey(_cr.get("aesKey"));
         _wk.setMpAct(mpact);
-        _wk.setWechatHandler(new WechatDefHandler());
+        _wk.setWechatHandler(new MyWechatHandler());
     }
 
     @RequestMapping("/api")
